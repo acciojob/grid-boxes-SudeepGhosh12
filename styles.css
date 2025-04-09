@@ -1,1 +1,61 @@
 /*  your css code here. If applicable */
+body {
+  margin: 20px;
+  font-family: Arial, sans-serif;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: repeat(4, 242.5px);
+  grid-template-rows: repeat(5, 124px);
+  gap: 10px;
+}
+
+#grid > div {
+  background-color: green;
+  color: white;
+  font-size: 24px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Grid item positioning */
+#grid > div:nth-child(1) {
+  grid-column: span 4 / auto; /* spans 4 columns */
+}
+
+#grid > div:nth-child(2) {
+  grid-row: span 4 / auto; /* spans 4 rows */
+}
+
+#grid > div:nth-child(3) {
+  /* default position */
+}
+
+#grid > div:nth-child(4) {
+  grid-column: span 2 / auto; /* spans 2 columns */
+}
+
+#grid > div:nth-child(5) {
+  grid-column: span 2 / auto;
+}
+
+#grid > div:nth-child(6) {
+  /* default position */
+}
+
+#grid > div:nth-child(7) {
+  /* default position */
+}
+
+#grid > div:nth-child(8) {
+  /* default position */
+}
+
+#grid > div:nth-child(9) {
+  /* default position */
+}
+
+#grid > div:nth-child(10) {
+  grid-column: span 3 / auto;
+}
